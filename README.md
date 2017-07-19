@@ -130,11 +130,16 @@ Each of them have the boltnames within them and **"conf"** corresponding to the 
 ## Deployment: In case Nimbus Kills itself then Check for the following issues
 
 1- Make Sure that JSON file name with mapping must be **inputTopoConfig.json** and **placed in conf** folder of your Storm installation.
+
 2- Names of Topo and bolt should be same as in JSON file.
+
 3- Make sure that all supervisors have the different name as entry in     **site: "orionXX"** and entry for that Supervsor slot does exists for that host or site.
+
 4- **Number of Threads** for every bolt in topo code should be same as in JSON file for the DAG to be submitted.
-6- Make sure to use the correct scheduler option in case you are using the **scheduler with Ackers or without Ackers.** 
-5- Check for **log in nimbus.log file** inside head node logs folder.
+
+5- Make sure to use the correct scheduler option in case you are using the **scheduler with Ackers or without Ackers.** 
+
+6- Check for **log in nimbus.log file** inside head node logs folder.
 
 ## Built With
 
