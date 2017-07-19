@@ -1,0 +1,131 @@
+{
+
+  "test":
+  {
+    "First":
+    {
+      "conf":"orion1#slot1,3/orion3#slot2,5/orion3#slot1,1/orion2#slot2,1",
+      "threads":"10"
+    },
+    "Second":
+    {
+      "conf":"orion2#slot2,1/orion3#slot3,2/orion3#slot2,1/orion2#slot3,1",
+      "threads":"5"
+    },
+    "Third":
+    {
+      "conf":"orion3#slot3,1/orion2#slot1,1",
+      "threads":"2"
+    },
+    "AuthSpout":
+    {
+      "conf":"orion1",
+      "threads":"2"
+    }
+
+
+  },
+  "small":
+  {
+
+
+    "First":
+    {
+      "conf":"orion1#slot1,2/orion3#slot2,1/orion3#slot1,1/orion2#slot2,1",
+      "threads":"5"
+    },
+    "Second":
+    {
+      "conf":"orion2#slot2,1/orion3#slot3,2/orion3#slot2,1/orion2#slot3,1",
+      "threads":"5"
+    },
+    "Third":
+    {
+      "conf":"orion3#slot3,1/orion2#slot1,1",
+      "threads":"2"
+    },
+
+
+
+    "AuthSpout":
+    {
+      "conf":"orion1",
+      "threads":"1"
+    }
+
+
+  },
+  "small1":
+  {
+
+
+    "First":
+    {
+      "conf":"orion1#slot1,2/orion3#slot2,1/orion3#slot1,1/orion1#slot2,1",
+      "threads":"5"
+    },
+    "Second":
+    {
+      "conf":"orion2#slot2,2/orion3#slot3,2/orion3#slot2,1/orion2#slot5,2/orion2#slot6,1",
+      "threads":"8"
+    },
+    "Third":
+    {
+      "conf":"orion3#slot3,1/orion2#slot1,1",
+      "threads":"2"
+    },
+
+
+
+    "AuthSpout":
+    {
+      "conf":"orion1",
+      "threads":"1"
+    }
+
+
+  }
+,
+  "TestSlotIdMapping":
+  {
+
+
+    "First":
+    {
+      "conf":"orion1#6701,2/orion3#6718,1/orion3#6717,1/orion1#6702,1",
+      "threads":"5"
+    },
+    "Second":
+    {
+      "conf":"orion2#6710,1/orion3#6719,1/orion3#6718,2/orion2#6713,1",
+      "threads":"5"
+    },
+    "Third":
+    {
+      "conf":"orion3#6719,1/orion2#6709,1",
+      "threads":"2"
+    },
+
+
+
+    "AuthSpout":
+    {
+      "conf":"orion1",
+      "threads":"1"
+    }
+  },
+  "IdentityTopology": {
+    "identity": {
+      "conf": "orion2#6710,1/orion2#6711,1/orion2#6712,1/orion2#6713,1/orion2#6714,1",
+      "threads": "5"
+    },
+    "sink": {
+      "conf": "orion1#6708,1",
+      "threads": "1"
+    },
+    "spout": {
+      "conf": "orion1",
+      "threads": "1"
+    }
+  }
+}
